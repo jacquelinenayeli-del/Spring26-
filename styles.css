@@ -1,7 +1,9 @@
- h1{color: hotpink;}
+ h1{color: #354864;}
+ h2{color: #4e5e6e;}
+ p{color: #4e5e6e;}
             body {
                 font-family: Arial, Helvetica, sans-serif;
-                background-color: lightgrey;
+                background-color: #f1eeea;
                 margin: 0;
                 padding: 0px;
             }
@@ -30,3 +32,16 @@
                 padding-top: 20px;
                 visibility: visible;
             }
+                table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }   
+        th, td {
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+        }
+        .mygroup {
+            background-color: lightblue;
+        }
