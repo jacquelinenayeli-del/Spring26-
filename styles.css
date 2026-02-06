@@ -1,35 +1,46 @@
- h1{color: #354864;}
- h2{color: #4e5e6e;}
- p{color: #4e5e6e;}
-            body {
-                font-family: Arial, Helvetica, sans-serif;
+h1{color:#354864;}
+h2{color: #4e5e6e;}
+p{color: #4e5e6e;}
+  *{
+    box-sizing: border-box;
+  }
+        body {
                 background-color: #f1eeea;
-                margin: 0;
-                padding: 0px;
+                
             }
-            .container {
-                width: 800px;
-                margin: auto;
-                background-color: lightpink;
+        
+        #container {
+                width:1425px;
+                height: 459px;
+                margin:0 auto;
+                background-color: #f1eeea;
+        }
+
+         .left{            
+              width: 420px;height: 400px;
+              float: left;
+              background-color: rgba(116, 137, 160, 0.5);
+              border-radius: 25px;
+              margin:.5px 2px .5px 2px;
+              padding-left: 50px;padding-top: 25px;
+              
+             
             }
-            .left {
-                width:48%;
-                float:left;
-            }
-              .right{
-                width:48%;
+        .right{
+                width:500px;height: 400px;
                 float:right;
-            }
-            article p{
-                color:brown;
-            }
+                background-color: rgba(145, 89, 137, 0.5);
+                border-radius: 25px;
+                margin:.5px 2px .5px 2px;
+                padding-left: 50px;
+
+              }
             footer{
-                text-align: center;
-                background-color: lightsalmon;
+                text-align:right;
+                background-color: #354864;
                 clear: both;
                 width: 100%;    
-                padding: 20px;
-                padding-top: 20px;
+                padding: 20px;padding-top: 20px;
                 visibility: visible;
             }
                 table, th, td {
@@ -42,6 +53,30 @@
         th {
             text-align: left;
         }
-        .mygroup {
-            background-color: lightblue;
+        .league-spartan-bold {
+        font-family: "League Spartan", sans-serif;
+         font-optical-sizing: auto;
+          font-weight: 700px;
+        font-style: normal;
+        }       
+
+        .league-spartan-regular {
+  font-family: "League Spartan", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+        }
+
+        /* Layout for hero thumbnails: evenly fit three images across the row */
+        .hero-row{
+         display:flex;
+         gap:1rem;
+         justify-content:space-between;
+         align-items:center;
+        }
+        .hero-row .hero-text{
+         width:32%;
+         height:auto;
+         object-fit:contain;
+         display:flex;
         }
