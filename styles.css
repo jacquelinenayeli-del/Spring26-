@@ -1,86 +1,363 @@
-h2{color: #4e5e6e;}
-p{color: #01070d;}
-  *{
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: "League Spartan", sans-serif;
+    background-image: url("backgrnd.jpg"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #222;
+}
+/* Global */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #1f2937;
+}
+
+/* Landing Section */
+.landing-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: #f9fafb;
+}
+
+.landing-content {
+  flex: 1 1 400px;
+  max-width: 600px;
+  text-align: left;
+}
+
+.landing-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.landing-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  padding: 12px 30px;
+  background-color: #111827;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+}
+
+.cta-button:hover {
+  background-color: #374151;
+  transition: 0.3s ease;
+}
+
+.landing-image {
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.landing-image img {
+  width: 100%;
+  border-radius: 12px;
+  object-fit: cover;
+}
+.embed-section {
+  padding: 60px 20px;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+.embed-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.embed-section iframe {
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+/* Comparison Table Section */
+.comparison-section {
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.comparison-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.comparison-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table thead {
+  background-color: #111827;
+  color: #ffffff;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.comparison-table th {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.comparison-table td {
+  font-size: 15px;
+  color: #374151;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #e5e7eb;
+  transition: 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .landing-section {
+    flex-direction: column-reverse;
   }
-        body {
-                background-color: #f1eeea;
-                
-            }
-        
-        #container {
-                width: 1435px;
-                height: 459px;
-                margin:0 auto;
-                background-color: #f1eeea;
-        }
 
-         .left{            
-              width: 450px;height: 400px;
-              float: left;
-              background-color: #354864;
-              border-radius: 25px;
-              margin:.5px 2px .5px 2px;
-              padding-left: 50px;padding-top: 25px;
-              
-             
-            }
-        .right{
-                width:500px;height: 400px;
-                float:left;
-                background-color: rgba(145, 89, 137, 0.5);
-                border-radius: 25px;
-                margin:.5px 2px .5px 2px;
-                padding-left: 50px;
-                padding-right:50px;
+  .landing-content {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
 
-              }
-            footer{
-                text-align:right;
-                background-color: #354864;
-                clear: both;
-                width: 100%;    
-                padding: 20px;padding-top: 20px;
-                visibility: visible;
-            }
-                table, th, td {
-            border: 1px solid black;
-            border-collapse: collapse;
-        }   
-        th, td {
-            padding: 10px;
-        }
-        th {
-            text-align: left;
-        }
-        .league-spartan-bold {
-        font-family: "League Spartan", sans-serif;
-         font-optical-sizing: auto;
-          font-weight: 700px;
-        font-style: normal;
-        }       
+/* NAVIGATION */
+nav {
+    background: white;
+    padding: 0 60px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
 
-        .league-spartan-regular {
-  font-family: "League Spartan", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400px;
-  font-style: normal;
-        }
+.logo {
+    font-weight: 700;
+    font-size: 22px;
+}
 
-        /* Layout for hero thumbnails: evenly fit three images across the row */
-        .hero-row{
-         display:flex;
-         gap:1rem;
-         justify-content:space-between;
-         align-items:center;
-        }
-        .hero-row .hero-text{
-         width:32%;
-         height:auto;
-         object-fit:contain;
-         display:flex;
-        }
-        a:hover{
-            color: #4e5e6e;
-        }
-        
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4d2d;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 140px 20px;
+    color: white;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* PRICING */
+.pricing {
+    padding: 100px 40px;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.pricing h2 {
+    font-size: 50px;
+    margin-bottom: 60px;
+    color:#354864;
+}
+
+.pricing-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    padding: 40px;
+    width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h3 {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.card li {
+    margin-bottom: 10px;
+}
+
+.card button {
+    padding: 12px 25px;
+    border: none;
+    background: #ff4d2d;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background: #e03e22;
+}
+
+/* FEATURED PLAN */
+.featured {
+    border: 2px solid #ff4d2d;
+    transform: scale(1.05);
+}
+/* SERVICES SECTION */
+.services {
+    padding: 80px 40px;
+    background: white;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+.service-lists {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.service-lists h3 {
+    margin-bottom: 15px;
+}
+
+.service-lists ul,
+.service-lists ol {
+    padding-left: 20px;
+}
+
+.service-lists li {
+    margin-bottom: 8px;
+}
+
+.comparison-section {
+  padding: 60px 20px;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.comparison-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #1f2937;
+}
+
+.comparison-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.comparison-table thead {
+  background-color: #111827;
+  color: #f8f8f8;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 16px 20px;
+  text-align: left;
+}
+
+.comparison-table th {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.comparison-table td {
+  font-size: 15px;
+  color: #374151;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.comparison-table tbody tr:hover {
+  background-color: #e5e7eb;
+  transition: 0.3s ease;
+}
