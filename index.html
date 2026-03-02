@@ -126,7 +126,68 @@
     </tbody>
   </table>
 </section>
+<!-- Form + Canvas + Media Section -->
+<section class="multi-media-section">
+  <div class="multi-media-container">
 
-   
+    <!-- Form -->
+    <div class="form-box">
+      <h2>Get Your Free Tax Guide</h2>
+      <p>Sign up to receive tips and insights for your business deductions.</p>
+      <form action="#" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <button type="submit">Download Now</button>
+      </form>
+    </div>
+<!-- Piggy Bank Canvas -->
+<div class="canvas-box">
+  <h3>Click the Piggy Bank to Earn Cash!</h3>
+  <canvas id="piggyCanvas" width="300" height="300" style="cursor:pointer; background: #f9fafb;"></canvas>
+  <audio id="cashSound" src="cha-ching.mp3" preload="auto"></audio>
+</div>
+
+<script>
+const canvas = document.getElementById('piggyCanvas');
+const ctx = canvas.getContext('2d');
+
+// Load piggy bank image
+const piggy = new Image();
+piggy.src = 'piggybank.png'; // Make sure this is the correct file name
+
+// Cash sound
+const cashSound = document.getElementById('cashSound');
+
+let bounce = 0;
+let bounceSpeed = 0.05; // speed of bouncing
+let bounceHeight = 20;  // maximum bounce height
+
+piggy.onload = () => {
+  animate();
+};
+
+// Animation loop for bouncing only
+function animate() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+  // Vertical bounce using sine wave
+  let yOffset = Math.sin(bounce) * bounceHeight;
+
+  // Draw piggy bank centered
+  ctx.drawImage(piggy, canvas.width / 2 - 75, canvas.height / 2 - 75 + yOffset, 150, 150);
+
+  bounce += bounceSpeed;
+
+  requestAnimationFrame(animate);
+}
+
+// Play cash sound only on click
+canvas.addEventListener('click', () => {
+  cashSound.currentTime = 0;
+  cashSound.play();
+});
+</script>
+  </div>
+</section>
 </body>
 </html>
