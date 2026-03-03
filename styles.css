@@ -49,7 +49,7 @@ body {
 
 .cta-button {
   padding: 12px 30px;
-  background-color: #111827;
+  background-color: #354864;
   color: #ffffff;
   text-decoration: none;
   border-radius: 6px;
@@ -74,7 +74,7 @@ body {
 }
 .embed-section {
   padding: 60px 20px;
-  background-color: #f3f4f6;
+  background-color: #f9fafb;
   text-align: center;
 }
 
@@ -95,7 +95,7 @@ body {
 .comparison-section {
   padding: 60px 20px;
   text-align: center;
-  background-color: #ffffff;
+  background-color: #f9fafb;
 }
 
 .comparison-section h2 {
@@ -381,7 +381,7 @@ nav {
 .form-box {
   flex: 1 1 300px;
   max-width: 350px;
-  background-color: #ffffff;
+  background-color: #f9fafb;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.05);
@@ -433,4 +433,65 @@ nav {
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
   background-color: #ffffff;
+}
+/* FAQ SECTION */
+.faq-section {
+  padding: 100px 20px;
+  background: linear-gradient(to right, #f8fafc, #e2e8f0);
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 48px;
+  margin-bottom: 50px;
+  color: #1f2a44;
+  font-weight: 700;
+}
+
+/* Accordion Container */
+#accordion {
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* Remove jQuery default borders */
+.ui-accordion .ui-accordion-header {
+  border: none;
+  margin: 0;
+}
+
+/* Header Styling */
+#accordion h3 {
+  background-color: #cbdcf0;
+  padding: 22px 30px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #1f2a44;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.3s ease;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#accordion h3:hover {
+  background-color: #b7cbe3;
+}
+
+/* Active Header */
+.ui-accordion-header-active {
+  background-color: #1f2a44 !important;
+  color: white !important;
+}
+
+/* Content Area */
+.ui-accordion-content {
+  background-color: white;
+  padding: 25px 30px;
+  text-align: left;
+  font-size: 16px;
+  color: #374151;
+  border: none;
 }

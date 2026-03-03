@@ -10,6 +10,21 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Jquery-->
+     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
+     <link rel="stylesheet" href="/resources/demos/style.css">
+     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+     <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
+     <script>
+ $(function () {
+  $("#accordion").accordion({
+    collapsible: true,
+    active: false,
+    heightStyle: "content",
+    icons: false
+  });
+});
+  </script>
 </head>
 
 <body>
@@ -18,7 +33,7 @@
     <div class="logo">VBS</div>
     <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">Services</a></li>
+        <li><a href="#service">Services</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">Resources</a></li>
         <li><a href="#">Contact</a></li>
@@ -32,7 +47,7 @@
       <a href="#comparison" class="cta-button">See How It Works</a>
     </div>
     <div class="landing-image">
-      <img src="group_accountants.jpg" alt="Business owner reviewing finances">
+      <img src="images/group_accountants.jpg" alt="Business owner reviewing finances">
     </div>
   </section>
 <!-- Embed Section -->
@@ -96,7 +111,36 @@
 
     </div>
 </section>
-<section class="comparison-section">
+<!-- FAQ SECTION -->
+<section class="faq-section">
+  <h2>Frequently Asked Questions</h2>
+
+  <div id="accordion">
+
+    <h3>What types of clients do you work with?</h3>
+    <div>
+      <p>We work with individuals, startups, and small to mid-sized businesses across industries.</p>
+    </div>
+
+    <h3>How much do bookkeeping services cost?</h3>
+    <div>
+      <p>Pricing depends on transaction volume and business complexity. Contact us for a custom quote.</p>
+    </div>
+
+    <h3>How do you keep my financial information secure?</h3>
+    <div>
+      <p>We use encrypted cloud-based accounting systems and secure document portals.</p>
+    </div>
+
+    <h3>How often will I receive reports?</h3>
+    <div>
+      <p>Most clients receive monthly reports with optional weekly summaries.</p>
+    </div>
+
+  </div>
+</section>
+<!-- Comparison Section -->
+<section id="services" class="comparison-section">
   <h2>What You Track vs. What You Can Deduct</h2>
 
   <table class="comparison-table">
@@ -126,6 +170,7 @@
     </tbody>
   </table>
 </section>
+
 <!-- Form + Canvas + Media Section -->
 <section class="multi-media-section">
   <div class="multi-media-container">
@@ -189,5 +234,6 @@ canvas.addEventListener('click', () => {
 </script>
   </div>
 </section>
+
 </body>
 </html>
