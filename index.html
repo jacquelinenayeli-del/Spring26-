@@ -28,6 +28,7 @@
 </head>
 
 <body>
+  
 <!-- NAVIGATION -->
 <nav>
     <div class="logo">VBS</div>
@@ -39,17 +40,34 @@
         <li><a href="#">Contact</a></li>
     </ul>
 </nav>
-<!-- Landing Section -->
-  <section class="landing-section">
-    <div class="landing-content">
-      <h1>Welcome to Clarity in Your Business Finances</h1>
-      <p>We make bookkeeping and tax deductions simple so you can focus on growing your business.</p>
-      <a href="#comparison" class="cta-button">See How It Works</a>
+<section class="landing-section" style="display:flex; align-items:center; justify-content:space-between; gap:40px; padding:60px 20px; flex-wrap:wrap;">
+
+  <!-- LEFT SIDE (TEXT + IMAGE) -->
+  <div class="landing-content" style="flex:1; min-width:300px;">
+    <h1>Welcome to Clarity in Your Business Finances</h1>
+    <p>We make bookkeeping and tax deductions simple so you can focus on growing your business.</p>
+
+    <!-- CTA BUTTON (backup option) -->
+    <a href="https://virtualbooksportal.com.myvbsbooks.net/public/appointment-scheduler/66b985c3aedc74003a1a8663/schedule?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" class="cta-button">
+      Book Free Consultation
+    </a>
+
+    <div class="landing-image" style="margin-top:20px;">
+      <img src="images/group_accountants.jpg" alt="Business owner reviewing finances" style="width:100%; border-radius:10px;">
     </div>
-    <div class="landing-image">
-      <img src="images/group_accountants.jpg" alt="Business owner reviewing finances">
-    </div>
-  </section>
+  </div>
+
+  <!-- RIGHT SIDE (EMBEDDED SCHEDULER) -->
+  <div style="flex:1; min-width:300px;">
+    <iframe 
+      src="https://virtualbooksportal.com.myvbsbooks.net/public/appointment-scheduler/66b985c3aedc74003a1a8663/schedule?utm_source=ig&utm_medium=social&utm_content=link_in_bio" 
+      width="100%" 
+      height="650" 
+      style="border:none; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
+    </iframe>
+  </div>
+
+</section>
 <!-- Embed Section -->
 <section class="embed-section">
   <h2>Watch & Learn</h2>
@@ -170,7 +188,6 @@
     </tbody>
   </table>
 </section>
-
 <!-- Form + Canvas + Media Section -->
 <section class="multi-media-section">
   <div class="multi-media-container">
