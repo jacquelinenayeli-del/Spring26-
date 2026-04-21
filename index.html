@@ -1,256 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>VBS Bookkeeping</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <!-- Jquery-->
-     <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.2/themes/base/jquery-ui.css">
-     <link rel="stylesheet" href="/resources/demos/style.css">
-     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
-     <script src="https://code.jquery.com/ui/1.14.2/jquery-ui.js"></script>
-     <script>
- $(function () {
-  $("#accordion").accordion({
-    collapsible: true,
-    active: false,
-    heightStyle: "content",
-    icons: false
-  });
-});
-  </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Virtual Bookkeeping Solutions </title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@1,700&family=League+Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
-<body>
   
-<!-- NAVIGATION -->
-<nav>
-    <div class="logo">VBS</div>
-    <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#service">Services</a></li>
-        <li><a href="#">Pricing</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">Contact</a></li>
-    </ul>
-</nav>
-<section class="landing-section" style="display:flex; align-items:center; justify-content:space-between; gap:40px; padding:60px 20px; flex-wrap:wrap;">
+</head>
+<body>
 
-  <!-- LEFT SIDE (TEXT + IMAGE) -->
-  <div class="landing-content" style="flex:1; min-width:300px;">
-    <h1>Welcome to Clarity in Your Business Finances</h1>
-    <p>We make bookkeeping and tax deductions simple so you can focus on growing your business.</p>
-
-    <!-- CTA BUTTON (backup option) -->
-    <a href="https://virtualbooksportal.com.myvbsbooks.net/public/appointment-scheduler/66b985c3aedc74003a1a8663/schedule?utm_source=ig&utm_medium=social&utm_content=link_in_bio" target="_blank" class="cta-button">
-      Book Free Consultation
-    </a>
-
-    <div class="landing-image" style="margin-top:20px;">
-      <img src="images/group_accountants.jpg" alt="Business owner reviewing finances" style="width:100%; border-radius:10px;">
+<header class="navbar">
+  <div class="container nav-flex">
+    <div class="nav-top">
+      <img src="vbslogo.png" alt="Virtual Bookkeeping Solutions Logo" class="nav-logo">
+      <h1 class="logo">VIRTUAL BOOKKEEPING SOLUTIONS</h1>
+    </div>
+    <div class="nav-row">
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">About Us</a>
+        <a href="#">Clientele</a>
+        <a href="#">Contact</a>
+      </nav>
+      <a href="#" class="btn-primary">Schedule a Consultation</a>
     </div>
   </div>
-
-  <!-- RIGHT SIDE (EMBEDDED SCHEDULER) -->
-  <div style="flex:1; min-width:300px;">
-    <iframe 
-      src="https://virtualbooksportal.com.myvbsbooks.net/public/appointment-scheduler/66b985c3aedc74003a1a8663/schedule?utm_source=ig&utm_medium=social&utm_content=link_in_bio" 
-      width="100%" 
-      height="650" 
-      style="border:none; border-radius:10px; box-shadow:0 10px 30px rgba(0,0,0,0.1);">
-    </iframe>
-  </div>
-
-</section>
-<!-- Embed Section -->
-<section class="embed-section">
-  <h2>Watch & Learn</h2>
-  <iframe 
-   src="https://www.youtube.com/embed/VYNTBWBqncU?si=Vo-AHrAomSKI7Xxo"
-    title="Business Finance Tutorial"
-    frameborder="0" 
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-    allowfullscreen>
-  </iframe>
-</section>
+</header>
 <!-- HERO -->
-<section class="hero">
-    <h1>Innovation Meets Expertise In Our Range Of Services</h1>
-    <p>Professional bookkeeping solutions built for growing businesses.</p>
+<section class="hero-image">
+  <div class="hero-overlay">
+    <div class="container hero-content">
+      
+      <h2>
+        Elevate Your Wealth: Exclusive Accounting for the Discerning Professional.
+      </h2>
+      <p>
+        Bespoke bookkeeping and financial strategy curated for high-net-worth individuals.
+      </p>
+      <a href="#" class="btn-secondary">Discover Our Approach</a>
+    </div>
+  </div>
 </section>
 
-<!-- PRICING -->
-<section class="pricing">
-    <h2>Our Pricing Plans</h2>
-
-    <div class="pricing-container">
-
-        <!-- STARTER -->
-        <div class="card">
-            <h3>Starter</h3>
-            <ul>
-                <li>✔ Monthly Reports</li>
-                <li>✖ Payroll</li>
-                <li>✖ Tax Filing</li>
-                <li>✖ CFO Support</li>
-            </ul>
-            <button>Get Started</button>
-        </div>
-
-        <!-- STANDARD -->
-        <div class="card featured">
-            <h3>Standard</h3>
-            <ul>
-                <li>✔ Monthly Reports</li>
-                <li>✔ Payroll</li>
-                <li>✖ Tax Filing</li>
-                <li>✖ CFO Support</li>
-            </ul>
-            <button>Get Started</button>
-        </div>
-
-        <!-- PREMIUM -->
-        <div class="card">
-            <h3>Premium</h3>
-            <ul>
-                <li>✔ Monthly Reports</li>
-                <li>✔ Payroll</li>
-                <li>✔ Tax Filing</li>
-                <li>✔ CFO Support</li>
-            </ul>
-            <button>Get Started</button>
-        </div>
-
-    </div>
-</section>
-<!-- FAQ SECTION -->
-<section class="faq-section">
-  <h2>Frequently Asked Questions</h2>
-
-  <div id="accordion">
-
-    <h3>What types of clients do you work with?</h3>
-    <div>
-      <p>We work with individuals, startups, and small to mid-sized businesses across industries.</p>
+<!-- FEATURES -->
+<section class="features">
+  <div class="container features-flex">
+    
+    <div class="feature-box">
+      <div class="icon">⚖️</div>
+      <h3>Privacy & Precision</h3>
+      <p>Tailored solutions with confidential financial management.</p>
     </div>
 
-    <h3>How much do bookkeeping services cost?</h3>
-    <div>
-      <p>Pricing depends on transaction volume and business complexity. Contact us for a custom quote.</p>
+    <div class="feature-box">
+      <div class="icon">🛡️</div>
+      <h3>Strategic Tax Planning</h3>
+      <p>Maximize savings with advanced tax strategies.</p>
     </div>
 
-    <h3>How do you keep my financial information secure?</h3>
-    <div>
-      <p>We use encrypted cloud-based accounting systems and secure document portals.</p>
-    </div>
-
-    <h3>How often will I receive reports?</h3>
-    <div>
-      <p>Most clients receive monthly reports with optional weekly summaries.</p>
+    <div class="feature-box">
+      <div class="icon">🤝</div>
+      <h3>Concierge Service</h3>
+      <p>Personalized support designed for your lifestyle.</p>
     </div>
 
   </div>
 </section>
-<!-- Comparison Section -->
-<section id="services" class="comparison-section">
-  <h2>What You Track vs. What You Can Deduct</h2>
 
-  <table class="comparison-table">
-    <thead>
-      <tr>
-        <th>What Business Owners Think</th>
-        <th>What Actually Matters</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>“I paid $800/month.”</td>
-        <td>What percentage was business use?</td>
-      </tr>
-      <tr>
-        <td>“It’s under my LLC.”</td>
-        <td>Is it documented properly?</td>
-      </tr>
-      <tr>
-        <td>“It’s a business vehicle.”</td>
-        <td>Mileage method or actual expense method?</td>
-      </tr>
-      <tr>
-        <td>“My full payment is deductible.”</td>
-        <td>Only qualifying business portions are deductible.</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-<!-- Form + Canvas + Media Section -->
-<section class="multi-media-section">
-  <div class="multi-media-container">
+<!-- SERVICES -->
+<section class="services">
+  <div class="container">
+    <h2 class="section-title">Our Services</h2>
 
-    <!-- Form -->
-    <div class="form-box">
-      <h2>Get Your Free Tax Guide</h2>
-      <p>Sign up to receive tips and insights for your business deductions.</p>
-      <form action="#" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <button type="submit">Download Now</button>
-      </form>
+    <div class="services-grid">
+      <div>Concierge Bookkeeping</div>
+      <div>Executive Payroll Solutions</div>
+      <div>Investment Portfolio Oversight</div>
+      <div>Estate & Trust Accounting</div>
     </div>
-<!-- Piggy Bank Canvas -->
-<div class="canvas-box">
-  <h3>Click the Piggy Bank to Earn Cash!</h3>
-  <canvas id="piggyCanvas" width="300" height="300" style="cursor:pointer; background: #f9fafb;"></canvas>
-  <audio id="cashSound" src="cha-ching.mp3" preload="auto"></audio>
-</div>
-
-<script>
-const canvas = document.getElementById('piggyCanvas');
-const ctx = canvas.getContext('2d');
-
-// Load piggy bank image
-const piggy = new Image();
-piggy.src = 'piggybank.png'; // Make sure this is the correct file name
-
-// Cash sound
-const cashSound = document.getElementById('cashSound');
-
-let bounce = 0;
-let bounceSpeed = 0.05; // speed of bouncing
-let bounceHeight = 20;  // maximum bounce height
-
-piggy.onload = () => {
-  animate();
-};
-
-// Animation loop for bouncing only
-function animate() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-
-  // Vertical bounce using sine wave
-  let yOffset = Math.sin(bounce) * bounceHeight;
-
-  // Draw piggy bank centered
-  ctx.drawImage(piggy, canvas.width / 2 - 75, canvas.height / 2 - 75 + yOffset, 150, 150);
-
-  bounce += bounceSpeed;
-
-  requestAnimationFrame(animate);
-}
-
-// Play cash sound only on click
-canvas.addEventListener('click', () => {
-  cashSound.currentTime = 0;
-  cashSound.play();
-});
-</script>
   </div>
 </section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer-flex">
+    <div>
+      <p>2024 | Business Name</p>
+      <p>1234 Corner Street</p>
+      <p>(210) 000-0000</p>
+      <p>www.businessname.com</p>
+    </div>
+
+    <div class="footer-right">
+      <h2 class="logo-mark">VA</h2>
+      <div class="socials">
+        <span>F</span>
+        <span>I</span>
+        <span>T</span>
+      </div>
+    </div>
+  </div>
+</footer>
 
 </body>
 </html>
