@@ -1,111 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Virtual Bookkeeping Solutions </title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rosario:ital,wght@1,700&family=League+Spartan:wght@700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Virtual Bookkeeping Solutions</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prata&family=Public+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-<header class="navbar">
-  <div class="container nav-flex">
-    <div class="nav-top">
-      <img src="vbslogo.png" alt="Virtual Bookkeeping Solutions Logo" class="nav-logo">
-      <h1 class="logo">VIRTUAL BOOKKEEPING SOLUTIONS</h1>
+  <!-- ══ NAVBAR ══ -->
+  <nav id="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#services">Finding the Right Service</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-left">
+        <h1 class="hero-h1">
+          <span><span class="gold">V</span>irtual</span><br />
+          <span><span class="gold">B</span>ookkeeping</span><br />
+          <span><span class="gold">S</span>olutions</span>
+        </h1>
+      </div>
+      <div class="hero-right">
+        <p class="hero-tagline">Achieving Financial Clarity for Businesses Through High-Standard Bookkeeping Services in San Antonio</p>
+        <p class="hero-body">Elevate your business to new heights with exceptional bookkeeping services that ensure financial clarity in San Antonio.</p>
+        <a href="#survey-1" class="cta-btn">Let's Begin!</a>
+      </div>
     </div>
-    <div class="nav-row">
-      <nav class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">About Us</a>
-        <a href="#">Clientele</a>
-        <a href="#">Contact</a>
-      </nav>
-      <a href="#" class="btn-primary">Schedule a Consultation</a>
+  </section>
+
+  <!-- ══ WELCOME ══ -->
+  <section class="welcome" id="about">
+    <p class="welcome-label">Welcome</p>
+    <div class="welcome-text">
+      <p>At Virtual Bookkeeping Solutions, we believe in fostering long-term relationships built on trust and transparency. Our commitment to excellence means that you can rely on us to deliver accurate, timely, and insightful financial information, freeing you to focus on what truly matters—growing your wealth and achieving your ambitions. Let us partner with you on your journey to financial success.</p>
+      <p>Our team of experts is dedicated to providing tailored bookkeeping solutions that align with your unique financial goals. Whether you're navigating complex tax regulations or seeking to optimize your financial strategy, we ensure that every decision is informed, strategic, and confidential.</p>
     </div>
+  </section>
+
+  <!-- ══ FAQ ACCORDION ══ -->
+  <section class="faq" id="faq">
+    <div class="faq-inner">
+
+      <!-- LEFT: Accordion -->
+      <div class="faq-left">
+        <h2 class="faq-title">Quick Answers</h2>
+        <div class="faq-list">
+
+          <div class="faq-item open">
+            <button class="faq-question" aria-expanded="true">
+              <span>What accounting software do you use?</span>
+              <span class="faq-icon">&#8964;</span>
+            </button>
+            <div class="faq-answer">
+              <p>We work with QuickBooks Online, Xero, and FreshBooks. We can adapt to other platforms your business already uses and ensure a smooth transition with zero data loss.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>How fast can we start?</span>
+              <span class="faq-icon">&#8250;</span>
+            </button>
+            <div class="faq-answer">
+              <p>Most clients are fully onboarded within 3–5 business days. After a short intake call, we review your existing books, set up your accounts, and begin services with minimal disruption to your workflow.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>Books are a mess?</span>
+              <span class="faq-icon">&#8250;</span>
+            </button>
+            <div class="faq-answer">
+              <p>No problem at all — catch-up bookkeeping is one of our specialties. We'll untangle months or even years of disorganized records, reconcile every account, and get you back on solid financial footing fast.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What does it cost?</span>
+              <span class="faq-icon">&#8250;</span>
+            </button>
+            <div class="faq-answer">
+              <p>Pricing is customized based on transaction volume, number of accounts, and the services you need. We offer transparent flat-rate monthly plans with no hidden fees. Contact us for a free, no-obligation quote.</p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false">
+              <span>What industries do you work with?</span>
+              <span class="faq-icon">&#8250;</span>
+            </button>
+            <div class="faq-answer">
+              <p>We serve a wide range of industries including real estate, healthcare, legal, e-commerce, construction, and professional services. Our team brings industry-specific expertise so your books are always in expert hands.</p>
+            </div>
+          </div>
+
+        </div><!-- /faq-list -->
+
+        <div class="faq-cta">
+          <a href="#survey-1" class="faq-cta-btn">See If We're the Right Fit &#8599;</a>
+        </div>
+      </div><!-- /faq-left -->
+
+      <!-- RIGHT: Faded photo + floating graph cards -->
+      <div class="faq-right">
+        <img
+          class="faq-photo"
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=900&auto=format&fit=crop&q=80"
+          alt="Business professionals in meeting"
+        />
+
+        <!-- Graph card 1: Cashflow line -->
+        <div class="graph-card graph-card--top">
+          <p class="graph-card-label">Cashflow</p>
+          <svg viewBox="0 0 160 60" xmlns="http://www.w3.org/2000/svg" class="graph-svg">
+            <polyline points="0,55 20,48 40,42 60,36 80,28 100,20 130,12 160,5"
+              fill="none" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="160" cy="5" r="4" fill="#3a7bd5"/>
+          </svg>
+          <p class="graph-card-sublabel">Forward view</p>
+        </div>
+
+        <!-- Graph card 2: Payments bar -->
+        <div class="graph-card graph-card--mid">
+          <p class="graph-card-label">Payments</p>
+          <svg viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg" class="graph-svg">
+            <rect x="8"   y="40" width="16" height="28" rx="2" fill="#a8c4e8"/>
+            <rect x="32"  y="28" width="16" height="40" rx="2" fill="#6aaee0"/>
+            <rect x="56"  y="18" width="16" height="50" rx="2" fill="#3a7bd5"/>
+            <rect x="80"  y="30" width="16" height="38" rx="2" fill="#6aaee0"/>
+            <rect x="104" y="14" width="16" height="54" rx="2" fill="#3a7bd5"/>
+            <rect x="128" y="22" width="16" height="46" rx="2" fill="#6aaee0"/>
+          </svg>
+          <p class="graph-card-sublabel">Current month · April earnings</p>
+        </div>
+
+        <!-- Graph card 3: Customer activity -->
+        <div class="graph-card graph-card--bot">
+          <p class="graph-card-label">Overall Customers Activity</p>
+          <svg viewBox="0 0 220 80" xmlns="http://www.w3.org/2000/svg" class="graph-svg">
+            <polyline
+              points="0,72 20,60 40,65 60,50 80,55 100,38 120,42 140,28 160,30 180,15 200,18 220,8"
+              fill="none" stroke="#3a7bd5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <polyline
+              points="0,72 20,60 40,65 60,50 80,55 100,38 120,42 140,28 160,30 180,15 200,18 220,8 220,80 0,80"
+              fill="rgba(58,123,213,0.08)" stroke="none"/>
+          </svg>
+        </div>
+
+      </div><!-- /faq-right -->
+    </div><!-- /faq-inner -->
+  </section>
+
+  <!-- ══ AMBER BANNER ══ -->
+  <div class="amber-banner">
+    <div class="amber-banner-left">
+      <div class="amber-icon">🧭</div>
+      <h2>Unsure Where to Begin on Your Financial Journey?</h2>
+    </div>
+    <a href="#survey-1" class="banner-btn">Find a Starting Point</a>
   </div>
-</header>
-<!-- HERO -->
-<section class="hero-image">
-  <div class="hero-overlay">
-    <div class="container hero-content">
-      
-      <h2>
-        Elevate Your Wealth: Exclusive Accounting for the Discerning Professional.
-      </h2>
-      <p>
-        Bespoke bookkeeping and financial strategy curated for high-net-worth individuals.
-      </p>
-      <a href="#" class="btn-secondary">Discover Our Approach</a>
+
+  <!-- ══ BEFORE WE START ══ -->
+  <section class="before-start" id="services">
+    <div class="before-start-left">
+      <img src="images/piggybank.jpg" alt="Piggy bank" />
     </div>
+    <div class="before-start-right">
+      <h2 class="section-title">Before we start</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">01</div>
+          <div>
+            <p class="step-label">Introduction</p>
+            <p class="step-title">Feedback is integral to our growth.</p>
+            <p class="step-desc">We are dedicated to understanding your needs and providing you with the best services.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">02</div>
+          <div>
+            <p class="step-label">Structure</p>
+            <p class="step-title">This survey is comprised of multiple-choice questions.</p>
+            <p class="step-desc">It will take a minimum of ten minutes to complete.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">03</div>
+          <div>
+            <p class="step-label">Reminders</p>
+            <p class="step-title">Results arrive within 24 hours.</p>
+            <p class="step-desc">You are allowed to redo it anytime within that period. After that, you will get a confirmation of receipt from our team.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SERVICE PHOTOS + CARDS ══ -->
+  <section class="services">
+    <div class="services-photos">
+      <img src="images/fluxualtingfinancechart.jpg" alt="Financial charts" />
+      <img src="images/finanizingdoc.jpg" alt="Working at desk" />
+      <img src="images/calculationforms.jpg" alt="Finance documents" />
+    </div>
+    <div class="service-cards">
+      <div class="service-card">
+        <div class="service-card-icon">📋</div>
+        <p class="service-card-title">Accounts Payable Management</p>
+        <p class="service-card-desc">The services provided by our accounts payable team can help you take care of your bills and payments.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card-icon">💰</div>
+        <p class="service-card-title">Accounts Receivable Management</p>
+        <p class="service-card-desc">Our accounts receivable services are designed so that we can ensure the collection and getting of your invoices.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-card-icon">🏦</div>
+        <p class="service-card-title">Account Reconciliation</p>
+        <p class="service-card-desc">This service will help your company reconcile their bank accounts and credit cards.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PULL QUOTE ══ -->
+  <div class="quote-section">
+    <p class="quote-text">Accounting Excellence is not just a skill;<br />it's a commitment to precision and integrity in every financial decision.</p>
+    <p class="quote-label">Joanne Tlili, VBS CEO</p>
   </div>
-</section>
 
-<!-- FEATURES -->
-<section class="features">
-  <div class="container features-flex">
-    
-    <div class="feature-box">
-      <div class="icon">⚖️</div>
-      <h3>Privacy & Precision</h3>
-      <p>Tailored solutions with confidential financial management.</p>
+  <!-- ══ SURVEY Q1 ══ -->
+  <div class="survey-section" id="survey-1">
+    <div class="survey-image">
+      <img src="images/collegue.jpg" alt="Business woman portrait with laptop" />
     </div>
-
-    <div class="feature-box">
-      <div class="icon">🛡️</div>
-      <h3>Strategic Tax Planning</h3>
-      <p>Maximize savings with advanced tax strategies.</p>
-    </div>
-
-    <div class="feature-box">
-      <div class="icon">🤝</div>
-      <h3>Concierge Service</h3>
-      <p>Personalized support designed for your lifestyle.</p>
-    </div>
-
-  </div>
-</section>
-
-<!-- SERVICES -->
-<section class="services">
-  <div class="container">
-    <h2 class="section-title">Our Services</h2>
-
-    <div class="services-grid">
-      <div>Concierge Bookkeeping</div>
-      <div>Executive Payroll Solutions</div>
-      <div>Investment Portfolio Oversight</div>
-      <div>Estate & Trust Accounting</div>
-    </div>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="container footer-flex">
-    <div>
-      <p>2024 | Business Name</p>
-      <p>1234 Corner Street</p>
-      <p>(210) 000-0000</p>
-      <p>www.businessname.com</p>
-    </div>
-
-    <div class="footer-right">
-      <h2 class="logo-mark">VA</h2>
-      <div class="socials">
-        <span>F</span>
-        <span>I</span>
-        <span>T</span>
+    <div class="survey-form-area">
+      <div class="survey-form-inner">
+        <p class="q-label">Where to Begin</p>
+        <h3 class="q-title">What is the primary reason you're interested in our services?</h3>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="q1" value="1" /><span>To improve efficiency</span></label>
+          <label class="radio-option"><input type="radio" name="q1" value="2" /><span>To save money</span></label>
+          <label class="radio-option"><input type="radio" name="q1" value="3" /><span>To enhance quality of life</span></label>
+          <label class="radio-option"><input type="radio" name="q1" value="4" /><span>To acquire a specific product</span></label>
+        </div>
+        <button class="next-btn" onclick="document.getElementById('survey-2').scrollIntoView({behavior:'smooth'})">Next</button>
       </div>
     </div>
   </div>
-</footer>
+
+  <!-- ══ SURVEY Q2 ══ -->
+  <div class="survey-section reverse" id="survey-2">
+    <div class="survey-image">
+      <img src="images/consult.jpg" alt="Business woman consulting" />
+    </div>
+    <div class="survey-form-area">
+      <div class="survey-form-inner">
+        <p class="q-label">Question 2</p>
+        <h3 class="q-title">Which feature of our product is most important to you?</h3>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="q2" value="1" /><span>Price</span></label>
+          <label class="radio-option"><input type="radio" name="q2" value="2" /><span>Quality</span></label>
+          <label class="radio-option"><input type="radio" name="q2" value="3" /><span>Customer service</span></label>
+          <label class="radio-option"><input type="radio" name="q2" value="4" /><span>Ease of use</span></label>
+        </div>
+        <button class="next-btn" onclick="document.getElementById('survey-3').scrollIntoView({behavior:'smooth'})">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SURVEY Q3 ══ -->
+  <div class="survey-section" id="survey-3">
+    <div class="survey-image">
+      <img src="images/clientdemo.jpg" alt="Woman portrait" />
+    </div>
+    <div class="survey-form-area">
+      <div class="survey-form-inner">
+        <p class="q-label">Question 3</p>
+        <h3 class="q-title">How did you hear about our company?</h3>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="q3" value="1" /><span>Social media</span></label>
+          <label class="radio-option"><input type="radio" name="q3" value="2" /><span>A friend / family member / newsletter</span></label>
+          <label class="radio-option"><input type="radio" name="q3" value="3" /><span>On the internet</span></label>
+          <label class="radio-option"><input type="radio" name="q3" value="4" /><span>Advertisement</span></label>
+        </div>
+        <button class="next-btn" onclick="document.getElementById('survey-4').scrollIntoView({behavior:'smooth'})">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ SURVEY Q4 ══ -->
+  <div class="survey-section reverse" id="survey-4">
+    <div class="survey-image">
+      <img src="images/survey-q4.jpg" alt="Laptop workspace" />
+    </div>
+    <div class="survey-form-area">
+      <div class="survey-form-inner">
+        <p class="q-label">Question 4</p>
+        <h3 class="q-title">What budget range have you allocated for your purchase?</h3>
+        <div class="radio-group">
+          <label class="radio-option"><input type="radio" name="q4" value="1" /><span>Less than $1,000</span></label>
+          <label class="radio-option"><input type="radio" name="q4" value="2" /><span>$1,000–$5,000</span></label>
+          <label class="radio-option"><input type="radio" name="q4" value="3" /><span>$5,000–$10,000</span></label>
+          <label class="radio-option"><input type="radio" name="q4" value="4" /><span>Above $10,000</span></label>
+        </div>
+        <button class="next-btn" onclick="document.getElementById('thankyou').scrollIntoView({behavior:'smooth'})">Next</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══ THANK YOU ══ -->
+  <section class="thankyou" id="thankyou">
+    <h2>We appreciate<br />your participation</h2>
+    <p>If there's anything else you wish to share with our team, please email <a href="mailto:vbs@support.com">vbs@support.com</a>.</p>
+    <a href="#contact" class="touch-btn">Get in Touch</a>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section class="contact" id="contact">
+    <div class="contact-image">
+      <img src="images/connect.png" alt="Office contact image" />
+    </div>
+    <div class="contact-form-area">
+      <div class="contact-form-inner">
+        <h2>Contact <span>us</span></h2>
+        <div class="form-field"><input type="text" placeholder="Name" /></div>
+        <div class="form-field"><input type="email" placeholder="Email address" /></div>
+        <div class="form-field"><textarea placeholder="Leave a message"></textarea></div>
+        <button class="submit-btn">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <p>&copy; 2026 Virtual Bookkeeping Solutions. All rights reserved.</p>
+    <p>San Antonio, TX</p>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const isOpen = item.classList.contains('open');
+        // Close all items
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+          i.querySelector('.faq-icon').innerHTML = '&#8250;';
+        });
+        // Open clicked item if it was closed
+        if (!isOpen) {
+          item.classList.add('open');
+          btn.setAttribute('aria-expanded', 'true');
+          btn.querySelector('.faq-icon').innerHTML = '&#8964;';
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
